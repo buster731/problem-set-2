@@ -90,6 +90,13 @@ public class ProblemSet2 {
 	}
 	
 	public void initials() {
-		
+		System.out.println("Please print your first name");
+		char firstName = in.nextLine().charAt(0);
+		System.out.println("Please print your middle name. If you don\'t have one, please print \-");
+		String middleName = in.nextLine().charAt(0);
+		System.out.println("Please print your last name");
+		String lastName = in.nextLine().charAt(0);
+		System.out.println("Your initials are " + firstName + middleName + lastName + ".");
 	}
+	in.close();
 }
